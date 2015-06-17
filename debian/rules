@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE=1
+export DH_OPTIONS
+
+export DH_GOPKG := github.com/gosexy/gettext
+
+%:
+	dh $@ --buildsystem=golang
+
+override_dh_auto_test:
+	# override, test fails here because its using a relative dir
+
+override_dh_auto_build:
+	dh_auto_build
+	# no need to ship a build example :)
+	rm -f ./obj-x86_64-linux-gnu/bin/examples

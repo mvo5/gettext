@@ -1,0 +1,18 @@
+Source: golang-gettext
+Section: devel
+Priority: extra
+Maintainer: Michael Vogt <mvo@ubuntu.com>
+Build-Depends:
+ debhelper (>= 9),
+ dh-golang,
+ golang-go,
+Standards-Version: 3.9.6
+Homepage: https://github.com/gosexy/gettext
+Vcs-Browser: https://github.com/gosexy/gettext
+
+Package: golang-gettext-dev
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Go bindings for GNU gettext
+ Go bindings for GNU gettext, an internationalization and localization
+ library for writing multilingual systems.

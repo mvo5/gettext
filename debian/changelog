@@ -1,0 +1,5 @@
+golang-gettext (0~1.gbp98b7b91-0ubuntu1) vivid; urgency=medium
+
+  * Initial release.
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 17 Jun 2015 14:12:18 +0200
